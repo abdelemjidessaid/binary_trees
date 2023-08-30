@@ -23,7 +23,7 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 }
 
 /**
- * function that check if a binary tree is complete.
+ * is_complete - function that check if a binary tree is complete.
  * @tree: pointer to binary tree.
  * Return: 1 if complete, 0 otherwise.
 */
