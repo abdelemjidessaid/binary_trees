@@ -64,7 +64,7 @@ int is_complete(const binary_tree_t *tree)
 	}
 	L = binary_tree_height(tree->left);
 	R = binary_tree_height(tree->right);
-	if (R > L)
+	if (L > R + 1 || R > L)
 		return (0);
 
 	return (1 && is_complete(tree->left) && is_complete(tree->right));
