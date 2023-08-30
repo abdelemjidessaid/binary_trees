@@ -56,6 +56,8 @@ int is_complete(const binary_tree_t *tree)
 		return (0);
 	if (tree->left && !(tree)->right)
 	{
+		if (tree->left->left || tree->left->right)
+			return (0);
 		sibling = binary_tree_sibling((binary_tree_t *) tree);
 		if (sibling->left && !(sibling)->right)
 			return (0);
